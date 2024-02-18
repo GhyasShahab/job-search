@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MainNav></MainNav>
+    <main-nav />
   </div>
 </template>
 
@@ -9,7 +9,7 @@ import MainNav from "@/components/MainNav.vue";
 export default {
   name: "App",
   components: {
-    MainNav: MainNav,
+    MainNav,
   },
 };
 </script>
