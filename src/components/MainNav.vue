@@ -10,13 +10,10 @@
 
         <nav class="h-full ml-12">
           <ul class="flex h-full p-0 m-0 list-none">
-            <li class="h-full">
-              <a href="" class="flex items-center h-full py-2.5">Teams</a>
-            </li>
             <li
               v-for="menuItem in menuItems"
               :key="menuItem"
-              class="h-full ml-9"
+              class="h-full ml-9 first:ml-0"
             >
               <a href="" class="flex items-center h-full py-2.5">{{
                 menuItem
@@ -35,7 +32,7 @@ export default {
     return {
       company: "Bobo Careers",
       url: "www.google.com",
-      menuItems: ["Locations", "Jobs", "Students", "Developers"],
+      menuItems: ["Teams", "Locations", "Jobs", "Students", "Developers"],
     };
   },
 };
