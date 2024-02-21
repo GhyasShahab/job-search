@@ -22,7 +22,8 @@
           </ul>
         </nav>
         <div class="flex items-center h-full ml-auto">
-          <action-button />
+          <profile-image v-if="isLogeddIn" />
+          <action-button v-else text="Sign in" @click="loginUser" />
         </div>
       </div>
     </div>
@@ -30,17 +31,25 @@
 </template>
 <script>
 import ActionButton from "@/components/ActionButton.vue";
+import ProfileImage from "@/components/ProfileImage.vue";
 export default {
   name: "MainNav",
   components: {
     ActionButton,
+    ProfileImage,
   },
   data() {
     return {
       company: "Bobo Careers",
       url: "www.google.com",
       menuItems: ["Teams", "Locations", "Jobs", "Students", "Developers"],
+      isLogeddIn: false,
     };
+  },
+  methods: {
+    loginUser() {
+      this.isLogeddIn = true;
+    },
   },
 };
 </script>
