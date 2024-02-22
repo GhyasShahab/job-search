@@ -26,17 +26,20 @@
           <action-button v-else text="Sign in" @click="loginUser" />
         </div>
       </div>
+      <sub-nav />
     </div>
   </header>
 </template>
 <script>
 import ActionButton from "@/components/ActionButton.vue";
 import ProfileImage from "@/components/ProfileImage.vue";
+import SubNav from "@/components/SubNav.vue";
 export default {
   name: "MainNav",
   components: {
     ActionButton,
     ProfileImage,
+    SubNav,
   },
   data() {
     return {
