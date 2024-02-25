@@ -24,9 +24,10 @@
         <div class="flex items-center h-full ml-auto">
           <profile-image v-if="isLogeddIn" />
           <action-button v-else text="Sign in" @click="loginUser" />
+          <action-button type="secondary" text="delete" @click="loginUser" />
         </div>
       </div>
-      <sub-nav />
+      <sub-nav v-if="isLogeddIn" />
     </div>
   </header>
 </template>
@@ -56,3 +57,4 @@ export default {
   },
 };
 </script>
+<style></style>
