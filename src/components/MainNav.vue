@@ -44,7 +44,7 @@ export default {
   },
   data() {
     return {
-      company: "Bobo Careers",
+      company: "SGAN Careers",
       url: "www.google.com",
       menuItems: ["Teams", "Locations", "Jobs", "Students", "Developers"],
       isLogeddIn: false,
