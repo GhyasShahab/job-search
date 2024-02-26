@@ -44,7 +44,7 @@ export default {
   },
   data() {
     return {
-      company: "SGAN Careers",
+      company: "NAGS Careers",
       url: "www.google.com",
       menuItems: ["Teams", "Locations", "Jobs", "Students", "Developers"],
       isLogeddIn: false,

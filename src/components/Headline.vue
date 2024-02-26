@@ -1,11 +1,11 @@
 <template>
   <section>
-    <h1>
+    <h1 class="font-bold tracking-tighter text-7xl mb-14">
       <span :class="actionClass">{{ action }} </span>
       <br />
       for every one
     </h1>
-    <h2>Find your next job at SGAN Corp</h2>
+    <h2 class="text-3xl font-light">Find your next job at NAGS Corp</h2>
   </section>
 </template>
 <script>
@@ -21,10 +21,11 @@ export default {
   computed: {
     actionClass() {
       return {
-        build: this.action === "Build",
-        create: this.action === "Create",
-        design: this.action === "Design",
-        code: this.action === "Code",
+        // build: this.action === "Build",
+        // create: this.action === "Create",
+        // design: this.action === "Design",
+        // code: this.action === "Code",
+        [this.action.toLocaleLowerCase()]: true,
       };
     },
   },
