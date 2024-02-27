@@ -8,8 +8,10 @@
         <label class="absolute left-0 -top-10">Role</label>
         <input
           type="text"
+          :value="role"
           placeholder="Software engineer"
           class="w-full text-lg font-normal focus:outline-none"
+          @input="updateRole"
         />
       </div>
       <span
@@ -20,8 +22,10 @@
         <label class="absolute left-0 -top-10">Where?</label>
         <input
           type="text"
+          :value="location"
           placeholder="Los Angeles"
           class="w-full text-lg font-normal focus:outline-none"
+          @input="updateLocation"
         />
       </div>
     </div>
@@ -37,6 +41,20 @@ export default {
   components: {
     FontAwesomeIcon,
     ActionButton,
+  },
+  data() {
+    return {
+      role: "",
+      location: "",
+    };
+  },
+  methods: {
+    updateRole($event) {
+      this.role = $event.target.value;
+    },
+    updateLocation($event) {
+      this.location = $event.target.value;
+    },
   },
 };
 </script>
