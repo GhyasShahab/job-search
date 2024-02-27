@@ -7,6 +7,7 @@
         </div>
         <div class="col-start-2 col-span-5 border border-blue-800">
           <headline />
+          <job-search-form />
         </div>
         <div class="col-start-7 col-span-5 border border-blue-800">
           5 column
@@ -20,11 +21,13 @@
 </template>
 <script>
 import Headline from "@/components/Headline.vue";
+import JobSearchForm from "@/components/JobSearchForm.vue";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Hero",
   components: {
     Headline,
+    JobSearchForm,
   },
 };
 </script>
