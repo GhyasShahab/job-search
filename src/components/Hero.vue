@@ -2,13 +2,19 @@
   <main>
     <section class="flex flex-col h-screen pt-10 pb-20">
       <div class="grid grid-cols-12">
-        <div class="col-start-1 col-span-1 border"></div>
-        <div class="col-start-2 col-span-5 border">
+        <div class="col-start-1 col-span-1"></div>
+        <div class="col-start-2 col-span-5">
           <headline />
           <job-search-form />
         </div>
-        <div class="col-start-7 col-span-5 border"></div>
-        <div class="col-start-12 col-span-1 border"></div>
+        <div class="col-start-7 col-span-5 self-center justify-self-center">
+          <img
+            class="w-80 object-contain"
+            src="https://img.freepik.com/premium-psd/virus-bug-website-creative-development-3d_66255-2002.jpg?size=626&ext=jpg&ga=GA1.1.1849480107.1709022028&semt=ais"
+            alt=""
+          />
+        </div>
+        <div class="col-start-12 col-span-1"></div>
       </div>
     </section>
   </main>
