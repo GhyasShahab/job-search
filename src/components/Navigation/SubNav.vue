@@ -11,5 +11,10 @@
 <script>
 export default {
   name: "SubNav",
+  computed: {
+    onJobReasultPage() {
+      return this.$router.name === "JobReasults";
+    },
+  },
 };
 </script>

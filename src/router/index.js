@@ -10,7 +10,7 @@ const routes = [
   },
   {
     path: "/jobs/reasult",
-    name: "about",
+    name: "JobReasults",
     component: JobReasultView,
   },
 ];
