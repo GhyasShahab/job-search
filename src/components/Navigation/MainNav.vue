@@ -5,9 +5,11 @@
       <div
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1"
       >
-        <a :href="url" class="flex items-center h-full text-xl">{{
-          company
-        }}</a>
+        <router-link
+          :to="{ name: 'home' }"
+          class="flex items-center h-full text-xl"
+          >NAGS Careers</router-link
+        >
 
         <nav class="h-full ml-12">
           <ul class="flex h-full p-0 m-0 list-none">
@@ -44,7 +46,6 @@ export default {
   },
   data() {
     return {
-      company: "NAGS Careers",
       url: "www.google.com",
       menuItems: ["Teams", "Locations", "Jobs", "Students", "Developers"],
       isLogeddIn: false,
