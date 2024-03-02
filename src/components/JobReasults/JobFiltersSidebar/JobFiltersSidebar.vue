@@ -1,5 +1,9 @@
 <template>
-  <h1>JobFiltersSidebar</h1>
+  <div
+    class="flex flex-col p-4 bg-white border-r border-solid border-brand-gray-1 w-96"
+  >
+    Job Filters Sidebar
+  </div>
 </template>
 <script>
 export default {
