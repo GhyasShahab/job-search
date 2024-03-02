@@ -6,7 +6,7 @@
 </template>
 <script>
 import JobFiltersSidebar from "@/components/JobReasults/JobFiltersSidebar/JobFiltersSidebar.vue";
-import JobListing from "@/components/JobReasults/JobListing.vue";
+import JobListing from "@/components/JobReasults/JobListings.vue";
 export default {
   name: "JobReasultView",
   components: {
