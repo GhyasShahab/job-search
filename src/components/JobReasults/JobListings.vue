@@ -3,6 +3,11 @@
     <ol>
       <job-listing v-for="job in displayJobs" :key="job.id" :job="job" />
     </ol>
+    <div class="mt-8 mx-auto">
+      <div class="flex flex-row flex-nowrap">
+        <p class="text-sm flex-grow">Page {{ cureentPage }}</p>
+      </div>
+    </div>
   </main>
 </template>
 <script>
@@ -19,9 +24,12 @@ export default {
     };
   },
   computed: {
-    displayJobs() {
+    cureentPage() {
       const pageString = this.$route.query.page || "1";
-      const pageNumber = Number.parseInt(pageString);
+      return Number.parseInt(pageString);
+    },
+    displayJobs() {
+      const pageNumber = this.cureentPage;
       const firstJobIndex = (pageNumber - 1) * 10;
       const lastJobIndex = pageNumber * 10;
       return this.jobs.slice(firstJobIndex, lastJobIndex);
